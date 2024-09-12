@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  api:
+    image: datascientest/fastapi:1.0.0
+    ports:
+      - "8000:8000"
+    networks:
+      - my_network
+
+  authentication_test:
+    build:
+      context: ./authentication_test
+    depends_on:
+      - api
+    networks:
+      - my_network
+
+  authorization_test:
+    build:
+      context: ./authorization_test
+    depends_on:
+      - api
+    networks:
+      - my_network
+
+  content_test:
+    build:
+      context: ./content_test
+    depends_on:
+      - api
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
+

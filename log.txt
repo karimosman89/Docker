@@ -1,0 +1,384 @@
+Attaching to dockertest_authentication_test_1, dockertest_authorization_test_1, dockertest_content_test_1, dockertest_api_1
+[36mapi_1                  |[0m INFO:     Started server process [6]
+[36mapi_1                  |[0m INFO:     Waiting for application startup.
+[36mapi_1                  |[0m INFO:     Application startup complete.
+[36mapi_1                  |[0m INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[36mapi_1                  |[0m INFO:     172.20.0.1:42484 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:42500 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:42512 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:42518 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:42532 - "GET /permissions?username=alice&password=wonderland HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:42536 - "GET /permissions?username=bob&password=builder HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:42550 - "GET /permissions?username=clementine&password=mandarine HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:56250 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:56264 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:56268 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:56274 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:43890 - "GET /permissions?username=alice&password=wonderland HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:43898 - "GET /permissions?username=bob&password=builder HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:43914 - "GET /permissions?username=clementine&password=mandarine HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:43936 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:43926 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:43946 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:43962 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:43972 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:43986 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:44000 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:43992 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:46830 - "GET /permissions?username=alice&password=wonderland HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:46834 - "GET /permissions?username=bob&password=builder HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:46846 - "GET /permissions?username=clementine&password=mandarine HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46858 - "GET /v1/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46862 - "GET /v2/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46876 - "GET /v1/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46888 - "GET /v2/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46896 - "GET /v1/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46908 - "GET /v2/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46916 - "GET /v1/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46932 - "GET /v2/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46826 - "GET /permissions?username=alice&password=wonderland HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:46832 - "GET /permissions?username=bob&password=builder HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:46840 - "GET /permissions?username=clementine&password=mandarine HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46856 - "GET /v1/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46860 - "GET /v2/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46872 - "GET /v1/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46874 - "GET /v2/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:46890 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:46898 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:46912 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m WARNING:  Invalid HTTP request received.
+[36mapi_1                  |[0m Traceback (most recent call last):
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/uvicorn/protocols/http/h11_impl.py", line 170, in handle_events
+[36mapi_1                  |[0m     event = self.conn.next_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 443, in next_event
+[36mapi_1                  |[0m     exc._reraise_as_remote_protocol_error()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+[36mapi_1                  |[0m     raise self
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 425, in next_event
+[36mapi_1                  |[0m     event = self._extract_next_receive_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+[36mapi_1                  |[0m     event = self._reader(self._receive_buffer)
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_readers.py", line 68, in maybe_read_from_IDLE_client
+[36mapi_1                  |[0m     raise LocalProtocolError("illegal request line")
+[36mapi_1                  |[0m h11._util.RemoteProtocolError: illegal request line
+[36mapi_1                  |[0m INFO:     167.248.133.122:36776 - "GET / HTTP/1.1" 404 Not Found
+[36mapi_1                  |[0m INFO:     167.248.133.122:50400 - "GET / HTTP/1.1" 404 Not Found
+[36mapi_1                  |[0m INFO:     167.248.133.122:42700 - "PRI %2A HTTP/2.0" 404 Not Found
+[36mapi_1                  |[0m WARNING:  Invalid HTTP request received.
+[36mapi_1                  |[0m Traceback (most recent call last):
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/starlette/exceptions.py", line 71, in __call__
+[36mapi_1                  |[0m     await self.app(scope, receive, sender)
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 595, in __call__
+[36mapi_1                  |[0m     await self.default(scope, receive, send)
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 483, in not_found
+[36mapi_1                  |[0m     raise HTTPException(status_code=404)
+[36mapi_1                  |[0m starlette.exceptions.HTTPException
+[36mapi_1                  |[0m 
+[36mapi_1                  |[0m During handling of the above exception, another exception occurred:
+[36mapi_1                  |[0m 
+[36mapi_1                  |[0m Traceback (most recent call last):
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/uvicorn/protocols/http/h11_impl.py", line 170, in handle_events
+[36mapi_1                  |[0m     event = self.conn.next_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 443, in next_event
+[36mapi_1                  |[0m     exc._reraise_as_remote_protocol_error()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+[36mapi_1                  |[0m     raise self
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 425, in next_event
+[36mapi_1                  |[0m     event = self._extract_next_receive_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+[36mapi_1                  |[0m     event = self._reader(self._receive_buffer)
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_readers.py", line 72, in maybe_read_from_IDLE_client
+[36mapi_1                  |[0m     matches = validate(
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_util.py", line 88, in validate
+[36mapi_1                  |[0m     raise LocalProtocolError(msg)
+[36mapi_1                  |[0m h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+[36mapi_1                  |[0m INFO:     47.99.136.156:18368 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin/scripts/setup.php HTTP/1.0" 404 Not Found
+[33mauthentication_test_1  |[0m 
+[33mauthentication_test_1  |[0m     ============================
+[33mauthentication_test_1  |[0m         Authentication test
+[33mauthentication_test_1  |[0m     ============================
+[33mauthentication_test_1  |[0m     request done at "/permissions"
+[33mauthentication_test_1  |[0m     | username="alice"
+[33mauthentication_test_1  |[0m     | password="wonderland"
+[33mauthentication_test_1  |[0m     expected result = 200
+[33mauthentication_test_1  |[0m     actual result = 200
+[33mauthentication_test_1  |[0m     ==>  SUCCESS
+[33mauthentication_test_1  |[0m     
+[33mauthentication_test_1  |[0m 
+[33mauthentication_test_1  |[0m     ============================
+[33mauthentication_test_1  |[0m         Authentication test
+[33mauthentication_test_1  |[0m     ============================
+[33mauthentication_test_1  |[0m     request done at "/permissions"
+[33mauthentication_test_1  |[0m     | username="bob"
+[33mauthentication_test_1  |[0m     | password="builder"
+[33mauthentication_test_1  |[0m     expected result = 200
+[33mauthentication_test_1  |[0m     actual result = 200
+[33mauthentication_test_1  |[0m     ==>  SUCCESS
+[33mauthentication_test_1  |[0m     
+[33mauthentication_test_1  |[0m 
+[33mauthentication_test_1  |[0m     ============================
+[33mauthentication_test_1  |[0m         Authentication test
+[33mauthentication_test_1  |[0m     ============================
+[33mauthentication_test_1  |[0m     request done at "/permissions"
+[33mauthentication_test_1  |[0m     | username="clementine"
+[33mauthentication_test_1  |[0m     | password="mandarine"
+[33mauthentication_test_1  |[0m     expected result = 200
+[33mauthentication_test_1  |[0m     actual result = 403
+[33mauthentication_test_1  |[0m     ==>  FAILURE
+[33mauthentication_test_1  |[0m     
+[36mapi_1                  |[0m INFO:     47.99.136.156:18370 - "GET http%3A//63.34.168.60%3A8000/phpmyadmin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18376 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.11.4/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18380 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.11.3/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18386 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.10.0.2/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18440 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.10.3/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18472 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.8.0.2/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18474 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.10.2/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18476 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.11.9.2/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18478 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.11.0/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18500 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.11.7/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18552 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.11.1.2/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18554 - "GET http%3A//63.34.168.60%3A8000/pma/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:18558 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin3/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49048 - "GET http%3A//63.34.168.60%3A8000/myadmin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49054 - "GET http%3A//63.34.168.60%3A8000/MyAdmin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49136 - "GET http%3A//63.34.168.60%3A8000/PHPMYADMIN/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49170 - "GET http%3A//63.34.168.60%3A8000/mysqladmin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49176 - "GET http%3A//63.34.168.60%3A8000/SQL/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49184 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.5.5-pl1/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49190 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.5.5/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49200 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.5.4/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49244 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2.5.7-pl1/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49302 - "GET http%3A//63.34.168.60%3A8000/admin/pma/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49316 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin-2/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49332 - "GET http%3A//63.34.168.60%3A8000/web/phpMyAdmin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49346 - "GET http%3A//63.34.168.60%3A8000/webadmin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49362 - "GET http%3A//63.34.168.60%3A8000/admin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49438 - "GET http%3A//63.34.168.60%3A8000/dbadmin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49466 - "GET http%3A//63.34.168.60%3A8000/mysql/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49478 - "GET http%3A//63.34.168.60%3A8000/phpMyAdmin2/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49492 - "GET http%3A//63.34.168.60%3A8000/phpma/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49500 - "GET http%3A//63.34.168.60%3A8000/sqlweb/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49514 - "GET http%3A//63.34.168.60%3A8000/webdb/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49572 - "GET http%3A//63.34.168.60%3A8000/websql/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49574 - "GET http%3A//63.34.168.60%3A8000/_phpMyAdmin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49578 - "GET http%3A//63.34.168.60%3A8000/php/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49580 - "GET http%3A//63.34.168.60%3A8000/admin/phpmyadmin/scripts/setup.txt HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49582 - "GET http%3A//63.34.168.60%3A8000/db/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49624 - "GET http%3A//63.34.168.60%3A8000/sqlmanager/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49640 - "GET http%3A//63.34.168.60%3A8000/mysqlmanager/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:49646 - "GET http%3A//63.34.168.60%3A8000/phpmanager/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:53526 - "GET http%3A//63.34.168.60%3A8000/php-myadmin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:53530 - "GET http%3A//63.34.168.60%3A8000/phpmy-admin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     47.99.136.156:53538 - "GET http%3A//63.34.168.60%3A8000/mysql-admin/scripts/setup.php HTTP/1.0" 404 Not Found
+[36mapi_1                  |[0m INFO:     172.20.0.1:37350 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:37352 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:37368 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:37374 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:37384 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:37392 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:37396 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:37412 - "GET /permissions?username=alice&password=wonderland HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:37420 - "GET /permissions?username=bob&password=builder HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:37428 - "GET /permissions?username=clementine&password=mandarine HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:53032 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:53042 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:53044 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:53060 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:53066 - "POST /v1/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:53074 - "GET /permissions?username=alice&password=wonderland HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:53078 - "POST /v2/sentiment HTTP/1.1" 405 Method Not Allowed
+[36mapi_1                  |[0m INFO:     172.20.0.1:53080 - "GET /permissions?username=bob&password=builder HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:53096 - "GET /permissions?username=clementine&password=mandarine HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:56528 - "GET /permissions?username=alice&password=wonderland HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:56532 - "GET /permissions?username=bob&password=builder HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:56546 - "GET /permissions?username=clementine&password=mandarine HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:56556 - "GET /v1/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:56568 - "GET /v2/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:56578 - "GET /v1/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:56582 - "GET /v1/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:56596 - "GET /v2/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:56598 - "GET /v2/sentiment HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m WARNING:  Invalid HTTP request received.
+[36mapi_1                  |[0m Traceback (most recent call last):
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/uvicorn/protocols/http/h11_impl.py", line 170, in handle_events
+[36mapi_1                  |[0m     event = self.conn.next_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 443, in next_event
+[36mapi_1                  |[0m     exc._reraise_as_remote_protocol_error()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+[36mapi_1                  |[0m     raise self
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 425, in next_event
+[36mapi_1                  |[0m     event = self._extract_next_receive_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+[36mapi_1                  |[0m     event = self._reader(self._receive_buffer)
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_readers.py", line 68, in maybe_read_from_IDLE_client
+[36mapi_1                  |[0m     raise LocalProtocolError("illegal request line")
+[36mapi_1                  |[0m h11._util.RemoteProtocolError: illegal request line
+[36mapi_1                  |[0m WARNING:  Invalid HTTP request received.
+[36mapi_1                  |[0m Traceback (most recent call last):
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/uvicorn/protocols/http/h11_impl.py", line 170, in handle_events
+[36mapi_1                  |[0m     event = self.conn.next_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 443, in next_event
+[36mapi_1                  |[0m     exc._reraise_as_remote_protocol_error()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+[36mapi_1                  |[0m     raise self
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 425, in next_event
+[36mapi_1                  |[0m     event = self._extract_next_receive_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+[36mapi_1                  |[0m     event = self._reader(self._receive_buffer)
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_readers.py", line 68, in maybe_read_from_IDLE_client
+[36mapi_1                  |[0m     raise LocalProtocolError("illegal request line")
+[36mapi_1                  |[0m h11._util.RemoteProtocolError: illegal request line
+[36mapi_1                  |[0m WARNING:  Invalid HTTP request received.
+[36mapi_1                  |[0m Traceback (most recent call last):
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/uvicorn/protocols/http/h11_impl.py", line 170, in handle_events
+[36mapi_1                  |[0m     event = self.conn.next_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 443, in next_event
+[36mapi_1                  |[0m     exc._reraise_as_remote_protocol_error()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+[32mauthorization_test_1   |[0m 
+[32mauthorization_test_1   |[0m     ============================
+[32mauthorization_test_1   |[0m         Authorization test - alice for v1/sentiment
+[32mauthorization_test_1   |[0m     ============================
+[32mauthorization_test_1   |[0m     request done at "v1/sentiment"
+[32mauthorization_test_1   |[0m     | username="alice"
+[32mauthorization_test_1   |[0m     | password="wonderland"
+[32mauthorization_test_1   |[0m     | sentence="['Both Versions']"
+[32mauthorization_test_1   |[0m     
+[32mauthorization_test_1   |[0m     expected result = 200
+[32mauthorization_test_1   |[0m     actual result = 200
+[32mauthorization_test_1   |[0m 
+[32mauthorization_test_1   |[0m     ==>  SUCCESS
+[32mauthorization_test_1   |[0m     
+[32mauthorization_test_1   |[0m 
+[32mauthorization_test_1   |[0m     ============================
+[32mauthorization_test_1   |[0m         Authorization test - alice for v2/sentiment
+[32mauthorization_test_1   |[0m     ============================
+[32mauthorization_test_1   |[0m     request done at "v2/sentiment"
+[32mauthorization_test_1   |[0m     | username="alice"
+[32mauthorization_test_1   |[0m     | password="wonderland"
+[32mauthorization_test_1   |[0m     | sentence="['Both Versions']"
+[32mauthorization_test_1   |[0m     
+[32mauthorization_test_1   |[0m     expected result = 200
+[32mauthorization_test_1   |[0m     actual result = 200
+[32mauthorization_test_1   |[0m 
+[32mauthorization_test_1   |[0m     ==>  SUCCESS
+[32mauthorization_test_1   |[0m     
+[32mauthorization_test_1   |[0m 
+[32mauthorization_test_1   |[0m     ============================
+[32mauthorization_test_1   |[0m         Authorization test - bob for v1/sentiment
+[32mauthorization_test_1   |[0m     ============================
+[32mauthorization_test_1   |[0m     request done at "v1/sentiment"
+[32mauthorization_test_1   |[0m     | username="bob"
+[32mauthorization_test_1   |[0m     | password="builder"
+[32mauthorization_test_1   |[0m     | sentence="['Just Version 1']"
+[32mauthorization_test_1   |[0m     
+[32mauthorization_test_1   |[0m     expected result = 200
+[32mauthorization_test_1   |[0m     actual result = 200
+[32mauthorization_test_1   |[0m 
+[32mauthorization_test_1   |[0m     ==>  SUCCESS
+[32mauthorization_test_1   |[0m     
+[32mauthorization_test_1   |[0m 
+[36mapi_1                  |[0m     raise self
+[32mauthorization_test_1   |[0m     ============================
+[32mauthorization_test_1   |[0m         Authorization test - bob for v2/sentiment
+[32mauthorization_test_1   |[0m     ============================
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 425, in next_event
+[32mauthorization_test_1   |[0m     request done at "v2/sentiment"
+[36mapi_1                  |[0m     event = self._extract_next_receive_event()
+[35mcontent_test_1         |[0m 
+[32mauthorization_test_1   |[0m     | username="bob"
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+[35mcontent_test_1         |[0m     ============================
+[32mauthorization_test_1   |[0m     | password="builder"
+[32mauthorization_test_1   |[0m     | sentence="['Just Version 1']"
+[32mauthorization_test_1   |[0m     
+[32mauthorization_test_1   |[0m     expected result = 403
+[32mauthorization_test_1   |[0m     actual result = 403
+[32mauthorization_test_1   |[0m 
+[35mcontent_test_1         |[0m         Content test - v2/sentiment
+[32mauthorization_test_1   |[0m     ==>  SUCCESS
+[36mapi_1                  |[0m     event = self._reader(self._receive_buffer)
+[35mcontent_test_1         |[0m     ============================
+[32mauthorization_test_1   |[0m     
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_readers.py", line 68, in maybe_read_from_IDLE_client
+[35mcontent_test_1         |[0m     request done at "v2/sentiment"
+[36mapi_1                  |[0m     raise LocalProtocolError("illegal request line")
+[36mapi_1                  |[0m h11._util.RemoteProtocolError: illegal request line
+[36mapi_1                  |[0m INFO:     Started server process [7]
+[35mcontent_test_1         |[0m     | username="alice"
+[35mcontent_test_1         |[0m     | password="wonderland"
+[36mapi_1                  |[0m INFO:     Waiting for application startup.
+[35mcontent_test_1         |[0m     | sentence="life is beautiful"
+[35mcontent_test_1         |[0m     
+[36mapi_1                  |[0m INFO:     Application startup complete.
+[35mcontent_test_1         |[0m     expected result positive = TRUE
+[35mcontent_test_1         |[0m     actual result positive = TRUE
+[35mcontent_test_1         |[0m     score value = 0.5994
+[36mapi_1                  |[0m INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[35mcontent_test_1         |[0m     ==>  SUCCESS
+[35mcontent_test_1         |[0m     
+[36mapi_1                  |[0m INFO:     172.20.0.1:59230 - "GET /v1/sentiment?username=alice&password=wonderland&sentence=v1%2Fsentiment&sentence=v2%2Fsentiment HTTP/1.1" 200 OK
+[35mcontent_test_1         |[0m 
+[35mcontent_test_1         |[0m     ============================
+[36mapi_1                  |[0m INFO:     172.20.0.1:46128 - "GET /v2/sentiment?username=alice&password=wonderland&sentence=v1%2Fsentiment&sentence=v2%2Fsentiment HTTP/1.1" 200 OK
+[35mcontent_test_1         |[0m         Content test - v1/sentiment
+[35mcontent_test_1         |[0m     ============================
+[36mapi_1                  |[0m INFO:     172.20.0.1:46130 - "GET /v1/sentiment?username=bob&password=builder&sentence=v1%2Fsentiment HTTP/1.1" 200 OK
+[35mcontent_test_1         |[0m     request done at "v1/sentiment"
+[35mcontent_test_1         |[0m     | username="alice"
+[36mapi_1                  |[0m INFO:     172.20.0.1:46146 - "GET /v2/sentiment?username=bob&password=builder&sentence=v1%2Fsentiment HTTP/1.1" 403 Forbidden
+[35mcontent_test_1         |[0m     | password="wonderland"
+[35mcontent_test_1         |[0m     | sentence="that sucks"
+[36mapi_1                  |[0m INFO:     172.20.0.1:46148 - "GET /v2/sentiment?username=alice&password=wonderland&sentence=life+is+beautiful HTTP/1.1" 200 OK
+[35mcontent_test_1         |[0m     
+[35mcontent_test_1         |[0m     expected result positive = FALSE
+[36mapi_1                  |[0m INFO:     172.20.0.1:46158 - "GET /v1/sentiment?username=alice&password=wonderland&sentence=that+sucks HTTP/1.1" 200 OK
+[35mcontent_test_1         |[0m     actual result positive = FALSE
+[35mcontent_test_1         |[0m     score value = -0.3612
+[36mapi_1                  |[0m INFO:     172.20.0.1:46164 - "GET /permissions?username=alice&password=wonderland HTTP/1.1" 200 OK
+[35mcontent_test_1         |[0m     ==>  SUCCESS
+[35mcontent_test_1         |[0m     
+[36mapi_1                  |[0m INFO:     172.20.0.1:46174 - "GET /permissions?username=bob&password=builder HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:46182 - "GET /permissions?username=clementine&password=mandarine HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     35.176.97.224:60582 - "GET /logon.htm HTTP/1.1" 404 Not Found
+[36mapi_1                  |[0m WARNING:  Invalid HTTP request received.
+[36mapi_1                  |[0m Traceback (most recent call last):
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/uvicorn/protocols/http/h11_impl.py", line 170, in handle_events
+[36mapi_1                  |[0m     event = self.conn.next_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 443, in next_event
+[36mapi_1                  |[0m     exc._reraise_as_remote_protocol_error()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+[36mapi_1                  |[0m     raise self
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 425, in next_event
+[36mapi_1                  |[0m     event = self._extract_next_receive_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+[36mapi_1                  |[0m     event = self._reader(self._receive_buffer)
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_readers.py", line 68, in maybe_read_from_IDLE_client
+[36mapi_1                  |[0m     raise LocalProtocolError("illegal request line")
+[36mapi_1                  |[0m h11._util.RemoteProtocolError: illegal request line
+[36mapi_1                  |[0m INFO:     35.176.97.224:50240 - "GET /login.jsp HTTP/1.1" 404 Not Found
+[36mapi_1                  |[0m WARNING:  Invalid HTTP request received.
+[36mapi_1                  |[0m Traceback (most recent call last):
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/uvicorn/protocols/http/h11_impl.py", line 170, in handle_events
+[36mapi_1                  |[0m     event = self.conn.next_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 443, in next_event
+[36mapi_1                  |[0m     exc._reraise_as_remote_protocol_error()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+[36mapi_1                  |[0m     raise self
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 425, in next_event
+[36mapi_1                  |[0m     event = self._extract_next_receive_event()
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+[36mapi_1                  |[0m     event = self._reader(self._receive_buffer)
+[36mapi_1                  |[0m   File "/usr/local/lib/python3.8/dist-packages/h11/_readers.py", line 68, in maybe_read_from_IDLE_client
+[36mapi_1                  |[0m     raise LocalProtocolError("illegal request line")
+[36mapi_1                  |[0m h11._util.RemoteProtocolError: illegal request line
+[36mapi_1                  |[0m INFO:     35.176.97.224:37456 - "GET / HTTP/1.1" 404 Not Found
+[36mapi_1                  |[0m INFO:     172.20.0.1:47878 - "GET /permissions?username=alice&password=wonderland HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:47894 - "GET /permissions?username=bob&password=builder HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:47900 - "GET /permissions?username=clementine&password=mandarine HTTP/1.1" 403 Forbidden
+[36mapi_1                  |[0m INFO:     172.20.0.1:47914 - "GET /v2/sentiment?username=alice&password=wonderland&sentence=life+is+beautiful HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:47924 - "GET /v1/sentiment?username=alice&password=wonderland&sentence=that+sucks HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:47938 - "GET /v1/sentiment?username=alice&password=wonderland&sentence=Both+Versions HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:47940 - "GET /v2/sentiment?username=alice&password=wonderland&sentence=Both+Versions HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:47946 - "GET /v1/sentiment?username=bob&password=builder&sentence=Just+Version+1 HTTP/1.1" 200 OK
+[36mapi_1                  |[0m INFO:     172.20.0.1:47960 - "GET /v2/sentiment?username=bob&password=builder&sentence=Just+Version+1 HTTP/1.1" 403 Forbidden
